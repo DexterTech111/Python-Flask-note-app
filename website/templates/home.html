@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %}
+
+{% block maincontent %}
+
+<div class="main-content mt-3">
+    
+    <h1>Hi, {{ name }}, Welcome to your Dashboard</h1>
+    <div class="row">
+        {% for number in numbers %}
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <img src="https://picsum.photos/id/{{number*100}}/300/200" class="card-img-top" alt="Feed Image">
+        <div class="card-body">
+          <p class="card-text">This is a sample feed post with a dynamic image from [Image Source].</p>
+          <div class="row text-muted">
+            <div class="col">
+              <span data-feather="eye"></span> {{views}} Views
+            </div>
+            <div class="col">
+              <span data-feather="message-square"></span> {{comments}} Comments
+            </div>
+            <div class="col">
+              <span data-feather="heart"></span> {{likes}} Likes
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+</div>
+</div>
+        {% endblock %}

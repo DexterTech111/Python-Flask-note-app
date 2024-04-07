@@ -1,0 +1,7 @@
+    /* Custom CSS for scrollable div */
+    .scrollable-div {
+        max-height: 90vh; /* Set maximum height for the scrollable div */
+        overflow-y: auto; /* Enable vertical scrollbar */
+        border: 1px solid #ccc; /* Optional: Add border for visual clarity */
+        padding: 10px; /* Optional: Add padding for content spacing */
+    }
